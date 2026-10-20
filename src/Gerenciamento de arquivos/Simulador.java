@@ -1,6 +1,5 @@
-package arvore_generica;
+import j11
 
-import java.util.List;
 import java.util.Scanner;
 
 public class Simulador {

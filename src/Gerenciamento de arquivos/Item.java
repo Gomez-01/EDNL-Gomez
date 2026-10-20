@@ -1,5 +1,3 @@
-package arvore_generica;
-
 public class Item {
 	private final String nome;
 	private final boolean diretorio;
