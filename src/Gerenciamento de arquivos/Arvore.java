@@ -1,4 +1,4 @@
-package arvore_generica;
+import No;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -135,5 +135,15 @@ public class Arvore<T> {
 	private void escreverMD(BufferedWriter w, No<T> no, int nivel) throws IOException {
 		w.write("  ".repeat(nivel) + "- `" + no.dado + "`\n");
 		for (No<T> f : no.filhos) escreverMD(w, f, nivel + 1);
+	}
+}
+
+class No<T> {
+	public T dado;
+	public No<T> pai;
+	public List<No<T>> filhos = new ArrayList<>();
+
+	public No(T dado) {
+		this.dado = dado;
 	}
 }
